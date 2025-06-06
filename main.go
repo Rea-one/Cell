@@ -14,6 +14,8 @@ const (
 	Columns     = 150
 )
 
+var ()
+
 func main() {
 	// 初始化视图
 	box := view.NewBox(model.GridSize{
@@ -25,7 +27,6 @@ func main() {
 	ebiten.SetWindowTitle(windowTitle)
 	ebiten.SetTPS(defaultTPS)
 	ebiten.SetWindowResizingMode(ebiten.WindowResizingModeEnabled)
-
 	// 启动游戏循环
 	ebiten.RunGame(box)
 }
