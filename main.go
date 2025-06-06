@@ -10,8 +10,8 @@ import (
 const (
 	windowTitle = "细胞自动机"
 	defaultTPS  = 45
-	Rows        = 300
-	Columns     = 150
+	Rows        = 100
+	Columns     = 100
 )
 
 var ()

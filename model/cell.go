@@ -81,3 +81,7 @@ func (tar *Cell) Update() {
 		}
 	}
 }
+
+func (tar *Cell) Set(val bool, Row, Column int) {
+	tar.now[Row][Column] = val
+}

@@ -61,6 +61,12 @@ func (tar *Box) Update() error {
 func (tar *Box) Draw(screen *ebiten.Image) {
 	screen.Fill(backgroundColor)
 
+	x, y := ebiten.CursorPosition()
+
+	if ebiten.IsMouseButtonPressed(ebiten.MouseButtonLeft) {
+		tar.the.Set(true, y/cellSize, x/cellSize)
+	}
+
 	// 绘制网格
 	for Row := 0; Row < tar.GetSize().Row; Row++ {
 		for Column := 0; Column < tar.GetSize().Column; Column++ {
